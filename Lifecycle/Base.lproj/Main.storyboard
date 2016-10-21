@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Rfw-rD-Lv7">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--VC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="VC" customModule="Lifecycle" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="V1" customModule="Lifecycle" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dx2-Jb-59U" customClass="V2" customModule="Lifecycle" customModuleProvider="target">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ymc-y0-Jnb" customClass="V3" customModule="Lifecycle" customModuleProvider="target">
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ymc-y0-Jnb" firstAttribute="centerX" secondItem="dx2-Jb-59U" secondAttribute="centerX" id="eD8-dl-swT"/>
+                                    <constraint firstItem="ymc-y0-Jnb" firstAttribute="height" secondItem="dx2-Jb-59U" secondAttribute="height" multiplier="0.5" id="ejX-KY-bQ7"/>
+                                    <constraint firstItem="ymc-y0-Jnb" firstAttribute="centerY" secondItem="dx2-Jb-59U" secondAttribute="centerY" id="goH-tT-XPv"/>
+                                    <constraint firstItem="ymc-y0-Jnb" firstAttribute="width" secondItem="dx2-Jb-59U" secondAttribute="width" multiplier="0.5" id="kVO-fD-Unn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dx2-Jb-59U" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="CZe-OQ-gec"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dx2-Jb-59U" secondAttribute="bottom" id="L3x-WO-D9l"/>
+                            <constraint firstAttribute="trailing" secondItem="dx2-Jb-59U" secondAttribute="trailing" id="tUX-bN-cVo"/>
+                            <constraint firstItem="dx2-Jb-59U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="zgH-qY-iZL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tB9-DU-p6y"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1046.376811594203" y="137.77173913043478"/>
+        </scene>
+        <!--NC-->
+        <scene sceneID="jgC-YI-zD1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rfw-rD-Lv7" customClass="NC" customModule="Lifecycle" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="R1X-TR-s10">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="d6w-eV-ZHf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AyK-cY-I3N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="786.68478260869574"/>
+        </scene>
+    </scenes>
+</document>
