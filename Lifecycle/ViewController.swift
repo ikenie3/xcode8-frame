@@ -22,7 +22,6 @@ class VC: UIViewController {
     override func awakeFromNib() {
         super.awakeFromNib()
         print("\(Date().description) : \(type(of: self)).\(#function):\(#line)")
-//        self.view.layoutIfNeeded()
     }
 
     override func viewDidLoad() {
